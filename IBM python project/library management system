@@ -1,0 +1,18 @@
+print("LTSU LIBRARY\n")
+
+class Library:
+    def __init__(self, bookName, author, issuedate, nameofstudent):
+        self.bookName = bookName
+        self.author = author
+        self.issuedate = issuedate
+        self.nameofstudent = nameofstudent
+
+    def display(self):
+        return f"Book name is {self.bookName}. It is written by {self.author}"
+
+    def data(self):
+        return f"Book is issued on {self.issuedate}, taken by {self.nameofstudent}"
+
+lb = Library("Harry Potter", "Harman", "18 May", "rishii")
+print(lb.display())
+print(lb.data())
