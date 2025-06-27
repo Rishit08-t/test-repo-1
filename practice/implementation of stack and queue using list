@@ -1,0 +1,31 @@
+# Initial list
+list = [1, 2, 3, 4, 5, 6, 7, 8]
+print("Initial list:", list)
+
+# ---------------- STACK IMPLEMENTATION ---------------- #
+
+# Push operation (append to the end of list)
+list.append(45)
+print("After push (append 45):", list)
+
+# Pop operation (remove from end of list)
+list.pop()
+print("After pop (removes last element):", list)
+
+# Peek operation (view the top element of the stack)
+if list:
+    last_element = list[len(list) - 1]  
+    print("Top element (peek):", last_element)
+else:
+    print("Stack is empty")
+
+# ---------------- QUEUE IMPLEMENTATION ---------------- #
+# Queue uses FIFO (First In First Out)
+
+# Dequeue operation (remove from the front of list)
+list.pop(0)
+print("After dequeue (pop from front):", list)
+
+# Enqueue operation (add to the end of list)
+list.append(69)
+print("After enqueue (append 69):", list)
