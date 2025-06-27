@@ -1,0 +1,36 @@
+# Dictionary storing names as keys and contact numbers as values
+dict = {
+    'rishit': 9041932551,
+    'sujal': 887687654,
+    'sahil': 9876543210,
+    'pratik': 1234567890
+}
+
+# Function to search for a contact by name
+def check():
+    try:
+        # Ask user to enter a name to search in the dictionary
+        name = input("Enter the name you want to search : ")
+        # Print the contact number if name exists
+        print(dict[name])
+    except KeyError:
+        # If name is not found in the dictionary, display a message
+        print("Contact not found")
+
+# Function to enter a new contact into the dictionary
+def enter_new():
+    # Ask user to enter the new name
+    name = input("Enter the new name : ")
+    # Ask user to enter the corresponding contact number
+    contact = int(input("Enter the new contact : "))
+    # Add the new entry to the dictionary
+    dict[name] = contact
+
+# Call the check function to search for a contact
+check()
+
+# Call the function to add a new contact
+enter_new()
+
+# Call the check function again to test search after adding a new contact
+check()
