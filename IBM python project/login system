@@ -1,0 +1,24 @@
+# Tuples storing valid usernames and their corresponding passwords
+username = ('jai', 'vikram', 'rishit', 'sujal', 'rishi')
+password = (12, 23, 43, 45, 65)
+
+# Taking username input from the user
+enter_user = input("Enter your username : ")
+
+# Taking password input and converting it to integer
+enter_pass = int(input("Enter your pass : "))
+
+# Flag to track if credentials match
+ans = False
+
+# Loop through the list of users to check for matching credentials
+for i in range(5):
+    if (enter_user == username[i] and enter_pass == password[i]):
+        ans = True  # Set flag to True if credentials match
+        break       # Exit loop once match is found
+
+# Output based on credential validation
+if ans == True:
+    print("welcome")  # Successful login
+else:
+    print("wrong credentials")  # Login failed
